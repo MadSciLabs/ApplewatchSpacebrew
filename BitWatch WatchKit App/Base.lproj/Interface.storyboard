@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BitWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="22.5" alignment="center" text="LAB Sockets" textAlignment="center" id="pna-ZA-qrd">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <button width="107" height="59.5" alignment="center" verticalAlignment="center" title="GO" id="ll5-Dy-7z0">
+                            <color key="backgroundColor" red="1" green="0.039866269257217923" blue="0.031581201272265824" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="btnGo" destination="AgC-eL-Hgc" id="VE8-Ho-UfS"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="bottom" text="-" textAlignment="center" numberOfLines="0" id="4NJ-RK-7mH">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="spacebrewOut" destination="4NJ-RK-7mH" id="5wO-T8-jNR"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
